@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="advanced custom search, agency, agent, business, clean, corporate, directory, google maps, homes, idx agent, listing properties, membership packages, property, real broker, real estate, real estate agent, real estate agency, realtor">
+<meta name="description" content="FindHouse - Real Estate HTML Template">
+<meta name="CreativeLayers" content="ATFN">
+<!-- css file -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- Responsive stylesheet -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Title -->
+<title>FindHouse - Real Estate HTML Template</title>
+<!-- Favicon -->
+<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+	<div class="preloader"></div>
+
+	<!-- Main Header Nav -->
+	<header class="header-nav menu_style_home_one home4 navbar-scrolltofixed stricky main-menu">
+		<div class="container-fluid p0">
+		    <!-- Ace Responsive Menu -->
+		    <nav>
+		        <!-- Menu Toggle btn-->
+		        <div class="menu-toggle">
+		            <img class="nav_logo_img img-fluid" src="images/header-logo.png" alt="header-logo.png">
+		            <button type="button" id="menu-btn">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		        </div>
+		        <a href="#" class="navbar_brand float-left dn-smd">
+		            <img class="logo1 img-fluid" src="images/header-logo.png" alt="header-logo.png">
+		            <img class="logo2 img-fluid" src="images/header-logo2.png" alt="header-logo2.png">
+		        </a>
+		        <!-- Responsive Menu Structure-->
+		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
+		            <li>
+		                <a href="index4.html"><span class="title">Home</span></a>
+		                <!-- Level Two-->
+		                <!-- <ul>
+		                    <li><a href="index.html">Home 1</a></li>
+		                    <li><a href="index2.html">Home 2</a></li>
+		                    <li><a href="index3.html">Home 3</a></li>
+		                    <li><a href="index4.html">Home 4</a></li>
+		                    <li><a href="index5.html">Home 5</a></li>
+		                    <li><a href="index6.html">Home 6</a></li>
+		                    <li><a href="index7.html">Home 7</a></li>
+		                    <li><a href="index8.html">Home 8</a></li>
+		                    <li><a href="index9.html">Home 9</a></li>
+		                    <li><a href="index10.html">Home 10</a></li>
+		                </ul> -->
+		            </li>
+		          
+		            
+		            <li>
+		                <a href="page-about.html"><span class="title">About Us</span></a>
+		            </li>
+		            <!-- <li>
+		                <a href="#"><span class="title">Blog</span></a>
+		                <ul>
+		                    <li><a href="page-blog-v1.html">Blog List 1</a></li>
+		                    <li><a href="page-blog-grid.html">Blog List 2</a></li>
+		                    <li><a href="page-blog-single.html">Single Post</a></li>
+		                </ul>
+		            </li> -->
+		            <li class="last">
+		                <a href="page-contact.html"><span class="title">Contact Us</span></a>
+		            </li>
+	                <!-- <li class="list-inline-item list_s"><a href="#" class="btn flaticon-user" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-lg">Login/Register</span></a></li>
+	                <li class="list-inline-item add_listing"><a href="page-add-new-property.html"><span class="flaticon-plus"></span><span class="dn-lg"> Create Listing</span></a></li> -->
+		        </ul>
+		    </nav>
+		</div>
+	</header>
+	<!-- Modal -->
+	<div class="sign_up_modal modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      	</div>
+		      	<div class="modal-body container pb20">
+		      		<div class="row">
+		      			<div class="col-lg-12">
+				    		<ul class="sign_up_tab nav nav-tabs" id="myTab" role="tablist">
+							  	<li class="nav-item">
+							    	<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+							  	</li>
+							  	<li class="nav-item">
+							    	<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Register</a>
+							  	</li>
+							</ul>
+		      			</div>
+		      		</div>
+					<div class="tab-content container" id="myTabContent">
+					  	<div class="row mt25 tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					  		<div class="col-lg-6 col-xl-6">
+					  			<div class="login_thumb">
+					  				<img class="img-fluid w100" src="images/resource/login.jpg" alt="login.jpg">
+					  			</div>
+					  		</div>
+					  		<div class="col-lg-6 col-xl-6">
+								<div class="login_form">
+									<form action="#">
+										<div class="heading">
+											<h4>Login</h4>
+										</div>
+										<div class="row mt25">
+											<div class="col-lg-12">
+												<button type="submit" class="btn btn-fb btn-block"><i class="fa fa-facebook float-left mt5"></i> Login with Facebook</button>
+											</div>
+											<div class="col-lg-12">
+												<button type="submit" class="btn btn-googl btn-block"><i class="fa fa-google float-left mt5"></i> Login with Google</button>
+											</div>
+										</div>
+										<hr>
+										<div class="input-group mb-2 mr-sm-2">
+										    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="User Name Or Email">
+										    <div class="input-group-prepend">
+										    	<div class="input-group-text"><i class="flaticon-user"></i></div>
+										    </div>
+										</div>
+										<div class="input-group form-group">
+									    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										    <div class="input-group-prepend">
+										    	<div class="input-group-text"><i class="flaticon-password"></i></div>
+										    </div>
+										</div>
+										<div class="form-group custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="exampleCheck1">
+											<label class="custom-control-label" for="exampleCheck1">Remember me</label>
+											<a class="btn-fpswd float-right" href="#">Lost your password?</a>
+										</div>
+										<button type="submit" class="btn btn-log btn-block btn-thm">Log In</button>
+										<p class="text-center">Don't have an account? <a class="text-thm" href="#">Register</a></p>
+									</form>
+								</div>
+					  		</div>
+					  	</div>
+					  	<div class="row mt25 tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					  		<div class="col-lg-6 col-xl-6">
+					  			<div class="regstr_thumb">
+					  				<img class="img-fluid w100" src="images/resource/regstr.jpg" alt="regstr.jpg">
+					  			</div>
+					  		</div>
+					  		<div class="col-lg-6 col-xl-6">
+								<div class="sign_up_form">
+									<div class="heading">
+										<h4>Register</h4>
+									</div>
+									<form action="#">
+										<div class="row">
+											<div class="col-lg-12">
+												<button type="submit" class="btn btn-block btn-fb"><i class="fa fa-facebook float-left mt5"></i> Login with Facebook</button>
+											</div>
+											<div class="col-lg-12">
+												<button type="submit" class="btn btn-block btn-googl"><i class="fa fa-google float-left mt5"></i> Login with Google</button>
+											</div>
+										</div>
+										<hr>
+										<div class="form-group input-group">
+										    <input type="text" class="form-control" id="exampleInputName" placeholder="User Name">
+										    <div class="input-group-prepend">
+										    	<div class="input-group-text"><i class="flaticon-user"></i></div>
+										    </div>
+										</div>
+										<div class="form-group input-group">
+										    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+										    <div class="input-group-prepend">
+										    	<div class="input-group-text"><i class="fa fa-envelope-o"></i></div>
+										    </div>
+										</div>
+										<div class="form-group input-group">
+										    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+										    <div class="input-group-prepend">
+										    	<div class="input-group-text"><i class="flaticon-password"></i></div>
+										    </div>
+										</div>
+										<div class="form-group input-group">
+										    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Re-enter password">
+										    <div class="input-group-prepend">
+										    	<div class="input-group-text"><i class="flaticon-password"></i></div>
+										    </div>
+										</div>
+										<div class="form-group ui_kit_select_search mb0">
+											<select class="selectpicker" data-live-search="true" data-width="100%">
+												<option data-tokens="SelectRole">Single User</option>
+												<option data-tokens="Agent/Agency">Agent</option>
+												<option data-tokens="SingleUser">Multi User</option>
+											</select>
+										</div>
+										<div class="form-group custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="exampleCheck2">
+											<label class="custom-control-label" for="exampleCheck2">I have read and accept the Terms and Privacy Policy?</label>
+										</div>
+										<button type="submit" class="btn btn-log btn-block btn-thm">Sign Up</button>
+										<p class="text-center">Already have an account? <a class="text-thm" href="#">Log In</a></p>
+									</form>
+								</div>
+					  		</div>
+					  	</div>
+					</div>
+		      	</div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- Main Header Nav For Mobile -->
+	<div id="page" class="stylehome1 h0">
+		<div class="mobile-menu">
+			<div class="header stylehome1">
+				<div class="d-flex justify-content-between">
+					<a class="mobile-menu-trigger" href="#menu"><img src="images/dark-nav-icon.svg" alt=""></a>
+					<a class="nav_logo_img" href="index.html"><img class="img-fluid mt20" src="images/header-logo2.png" alt="header-logo2.png"></a>
+					<a class="mobile-menu-reg-link" href="page-register.html"><span class="flaticon-user"></span></a>
+				</div>
+			</div>
+		</div><!-- /.mobile-menu -->
+		<nav id="menu" class="stylehome1">
+			<ul>
+				<li><span>Home</span>
+	                <ul>
+	                    <li><a href="index.html">Home 1</a></li>
+	                    <li><a href="index2.html">Home 2</a></li>
+	                    <li><a href="index3.html">Home 3</a></li>
+	                    <li><a href="index4.html">Home 4</a></li>
+	                    <li><a href="index5.html">Home 5</a></li>
+	                    <li><a href="index6.html">Home 6</a></li>
+	                    <li><a href="index7.html">Home 7</a></li>
+	                    <li><a href="index8.html">Home 8</a></li>
+	                    <li><a href="index9.html">Home 9</a></li>
+	                    <li><a href="index10.html">Home 10</a></li>
+	                </ul>
+				</li>
+				<li><span>Listing</span>
+					<ul>
+						<li><span>Listing Grid</span>
+							<ul>
+	                            <li><a href="page-listing-grid-v1.html">Grid v1</a></li>
+	                            <li><a href="page-listing-grid-v2.html">Grid v2</a></li>
+	                            <li><a href="page-listing-grid-v3.html">Grid v3</a></li>
+	                            <li><a href="page-listing-grid-v4.html">Grid v4</a></li>
+	                            <li><a href="page-listing-grid-v5.html">Grid v5</a></li>
+	                            <li><a href="page-listing-full-width-grid.html">Grid Fullwidth</a></li>
+							</ul>
+						</li>
+						<li><span>Listing Style</span>
+							<ul>
+	                            <li><a href="page-listing-parallax.html">Parallax Style</a></li>
+	                            <li><a href="page-listing-slider.html">Slider Style</a></li>
+	                            <li><a href="page-listing-map.html">Map Header</a></li>
+							</ul>
+						</li>
+						<li><span>Listing Half</span>
+							<ul>
+	                            <li><a href="page-listing-half-map-v1.html">Map V1</a></li>
+	                            <li><a href="page-listing-half-map-v2.html">Map V2</a></li>
+	                            <li><a href="page-listing-half-map-v3.html">Map V3</a></li>
+	                            <li><a href="page-listing-half-map-v4.html">Map V4</a></li>
+							</ul>
+						</li>
+						<li><span>Agent View</span>
+							<ul>
+	                            <li><a href="page-listing-agent-v1.html">Agent V1</a></li>
+	                            <li><a href="page-listing-agent-v2.html">Agent V2</a></li>
+	                            <li><a href="page-listing-agent-v3.html">Agent Details</a></li>
+							</ul>
+						</li>
+						<li><span>Agencies View</span>
+							<ul>
+	                            <li><a href="page-agencies-list-v1.html">Agencies V1</a></li>
+	                            <li><a href="page-agencies-list-v2.html">Agencies V2</a></li>
+	                            <li><a href="page-agencies-list-v3.html">Agencies Details</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Property</span>
+					<ul>
+						<li><span>Property</span>
+							<ul>
+					            <li><a href="page-dashboard.html">Dashboard</a></li>
+			                    <li><a href="page-my-properties.html">My Properties</a></li>
+			                    <li><a href="page-add-new-property.html">Add New Property</a></li>
+							</ul>
+						</li>
+						<li><span>Listing Single</span>
+							<ul>
+	                            <li><a href="page-listing-single-v1.html">Single V1</a></li>
+	                            <li><a href="page-listing-single-v2.html">Single V2</a></li>
+	                            <li><a href="page-listing-single-v3.html">Single V3</a></li>
+	                            <li><a href="page-listing-single-v4.html">Single V4</a></li>
+	                            <li><a href="page-listing-single-v5.html">Single V5</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Blog</span>
+					<ul>
+	                    <li><a href="page-blog-v1.html">Blog List 1</a></li>
+	                    <li><a href="page-blog-grid.html">Blog List 2</a></li>
+	                    <li><a href="page-blog-single.html">Single Post</a></li>
+					</ul>
+				</li>
+				<li><span>Pages</span>
+					<ul>
+						<li><span>Shop</span>
+							<ul>
+			                    <li><a href="page-shop.html">Shop</a></li>
+			                    <li><a href="page-shop-single.html">Shop Single</a></li>
+			                    <li><a href="page-shop-cart.html">Cart</a></li>
+			                    <li><a href="page-shop-checkout.html">Checkout</a></li>
+			                    <li><a href="page-shop-order.html">Order</a></li>
+							</ul>
+						</li>
+		                <li><a href="page-about.html">About Us</a></li>
+		                <li><a href="page-gallery.html">Gallery</a></li>
+		                <li><a href="page-faq.html">Faq</a></li>
+		                <li><a href="page-login.html">LogIn</a></li>
+		                <li><a href="page-compare.html">Membership</a></li>
+		                <li><a href="page-compare2.html">Membership 2</a></li>
+	                    <li><a href="page-register.html">Register</a></li>
+	                    <li><a href="page-service.html">Service</a></li>
+		                <li><a href="page-error.html">404 Page</a></li>
+		                <li><a href="page-terms.html">Terms and Conditions</a></li>
+		                <li><a href="page-ui-element.html">UI Elements</a></li>
+					</ul>
+				</li>
+				<li><a href="page-contact.html">Contact</a></li>
+				<li><a href="page-login.html"><span class="flaticon-user"></span> Login</a></li>
+				<li><a href="page-register.html"><span class="flaticon-edit"></span> Register</a></li>
+				<li class="cl_btn"><a class="btn btn-block btn-lg btn-thm circle" href="#"><span class="flaticon-plus"></span> Create Listing</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- 4th Home Slider -->
+<div class="home-four">
+    <div class="container-fluid p0">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-banner-wrapper">
+                    <div class="banner-style-one owl-theme owl-carousel">
+                        <div class="slide slide-one" style="background-image: url(images/home/1.jpg);height: 800px;"></div>
+                        <div class="slide slide-one" style="background-image: url(images/home/2.jpg);height: 800px;"></div>
+                        <div class="slide slide-one" style="background-image: url(images/home/3.jpg);height: 800px;"></div>
+                    </div>
+
+                    <div class="carousel-btn-block banner-carousel-btn">
+                        <span class="carousel-btn left-btn">
+                            <i class="flaticon-left-arrow-1 left"></i>
+                        </span>
+                        <span class="carousel-btn right-btn">
+                            <i class="flaticon-right-arrow right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updated Content Section -->
+    <div class="container home_iconbox_container">
+        <div class="row posr">
+            <div class="col-lg-12">
+                <div class="home_content home4">
+
+                    <!-- HERO TEXT -->
+                    <div class="home-text text-center">
+                        <h2 class="fz55">Landmark UK Properties Ltd</h2>
+                        <p class="fz18 color-white">
+                            Commercial & Residential Property Investment and Purchase Across the UK
+                        </p>
+                    </div>
+
+                    <!-- REMOVED SEARCH BOX COMPLETELY -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- What are you looking for section -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h4 class="text-center color-white fw600 mb10 mb0-520">
+                    Building value through strategic acquisitions and intelligent development.
+                </h4>
+
+                <h4 class="text-center color-white fw600 mb25 mb0-520">
+                    What are you looking for?
+                </h4>
+
+                <ul class="home4_iconbox mb0">
+                    <li class="list-inline-item">
+                        <div class="icon"><span class="flaticon-house"></span><p>Modern Villa</p></div>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <div class="icon"><span class="flaticon-house-1"></span><p>Family House</p></div>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <div class="icon"><span class="flaticon-house-2"></span><p>Town House</p></div>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <div class="icon"><span class="flaticon-building"></span><p>Apartment</p></div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Section 1 -->
+
+	<section style="padding: 80px 0; background: #f7f9fc;">
+    <div style="max-width: 1200px; margin: auto; padding: 0 15px;">
+
+        <!-- MAIN HEADING -->
+			
+			<div class="section-heading text-center mb-4">
+				<h2 class="main-title">
+					Commercial and Residential Investment & Purchase
+				</h2>
+
+				<h3 class="sub-title">
+					Strategic Property Acquisition & Investment Opportunities
+				</h3>
+			</div>
+
+			
+			<div class="intro-text">
+				<p>
+					At Landmark UK Properties Ltd, we specialize in the strategic purchase and investment of both
+					residential and commercial properties across the United Kingdom. Our goal is to identify
+					high-potential assets, maximize value, and create sustainable long-term returns for our partners
+					and stakeholders.
+				</p>
+			</div>
+
+      
+       <!-- Property Types Slider -->
+<section class="our-team">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="main-title text-center">
+                    <h2>Residential Property Investment</h2>
+                    <p>We invest in a wide range of residential properties, including:</p>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+    <div class="col-lg-12">
+        <div class="team_slider owl-carousel">
+
+            <!-- Item -->
+            <div class="slider-card">
+                <div class="slider-thumb">
+                    <h4>Single-family homes</h4>
+                </div>
+                <p class="slider-text">Investing in quality homes with high resale value and rental potential.</p>
+            </div>
+
+            <!-- Item -->
+            <div class="slider-card">
+                <div class="slider-thumb">
+                    <h4>Multi-unit blocks</h4>
+                </div>
+                <p class="slider-text">Opportunities in multi-unit properties with excellent rental yields.</p>
+            </div>
+
+            <!-- Item -->
+            <div class="slider-card">
+                <div class="slider-thumb">
+                    <h4>HMOs and Shared Accommodation</h4>
+                </div>
+                <p class="slider-text">High demand properties ideal for shared accommodation investments.</p>
+            </div>
+
+            <!-- Item -->
+            <div class="slider-card">
+                <div class="slider-thumb">
+                    <h4>Portfolios and Bulk Purchases</h4>
+                </div>
+                <p class="slider-text">Comprehensive packages offering great value and scalability.</p>
+            </div>
+
+            <!-- Item -->
+            <div class="slider-card">
+                <div class="slider-thumb">
+                    <h4>Development-ready sites</h4>
+                </div>
+                <p class="slider-text">Properties with development potential or major refurbishment opportunities.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+    </div>
+</section>
+
+
+	<!-- Section 1 Ends-->
+
+  <!-- section-2 start -->
+
+
+<!-- Commercial Office Block to Residential Conversion -->
+<section id="property-city" class="property-city py-5">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-3" style="font-size: 2.5rem;">Commercial Office Block to Residential Conversion</h2>
+                <h4 class="fw-semibold" style="font-size: 1.75rem;">Commercial Office Block Conversion to Residential</h4>
+            </div>
+        </div>
+
+        <!-- Card 1: Image Left, Text Right -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-1 order-md-1 text-center text-md-start mb-4 mb-md-0">
+                <img src="images/blog/bh1.jpg" alt="Office Conversion" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6 order-2 order-md-2 text-center text-md-start">
+                <p class="mb-0" style="font-size: 1.125rem;">
+                    At Landmark UK Properties Ltd, we specialise in the acquisition and conversion of commercial office buildings into high-quality residential homes. Our expertise lies in transforming underutilised or vacant office spaces into modern, functional, and in-demand residential accommodation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 2: Text Left, Image Right -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-1 order-md-1 text-center text-md-start mb-4 mb-md-0">
+                <p class="mb-0" style="font-size: 1.125rem;">
+                    Through strategic planning, refurbishment, and development, we maximise the potential of commercial assets while contributing to the growing need for residential housing across the UK.
+                </p>
+            </div>
+            <div class="col-md-6 order-2 order-md-2 text-center">
+                <img src="images/blog/bh2.jpg" alt="Office Conversion" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <!-- section-2 end -->
+
+    <!-- section-3 Start -->
+<!-- Why Office-to-Residential Conversion -->
+<section id="office-residential" class="py-5" style="background:#f8f9fb;">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="row mb-5 text-center">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold mb-3">Why Office-to-Residential Conversion Works</h2>
+                <h5 class="fw-normal text-muted">
+                    Converting commercial office blocks into residential units offers several advantages:
+                </h5>
+            </div>
+        </div>
+
+        <!-- Benefits Cards -->
+<!-- Benefits Cards -->
+<div class="row benefits-grid">
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="benefit-card">
+            <h5>Efficient Use of Buildings</h5>
+            <p>Make optimal use of empty or underperforming office buildings.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="benefit-card">
+            <h5>Faster Planning Approvals</h5>
+            <p>Leverage permitted development rights to speed approvals.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="benefit-card">
+            <h5>Modern Living Spaces</h5>
+            <p>Create high-quality, modern residential homes that are in demand.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="benefit-card">
+            <h5>Strong Rental Demand</h5>
+            <p>Ensure reliable occupancy rates with attractive living spaces.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="benefit-card">
+            <h5>Increased Asset Value</h5>
+            <p>Boost property value and long-term investment returns.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="benefit-card">
+            <h5>Quality & Compliance</h5>
+            <p>Ensure projects meet housing standards with durability and comfort.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+      <!-- Our Expertise Checklist -->
+<div class="row mb-4 " style="margin-top: 25px;">
+    <div class="col-lg-12 text-center mb-4">
+        <h3 class="fw-bold">Our Expertise Includes</h3>
+    </div>
+
+    <div class="col-lg-8 mx-auto">
+        <ul class="expertise-checklist">
+            <li>
+                <span class="check">&#10003;</span>
+                Full feasibility assessments and market analysis
+            </li>
+            <li>
+                <span class="check">&#10003;</span>
+                Planning, compliance, and building regulation support
+            </li>
+            <li>
+                <span class="check">&#10003;</span>
+                Architectural redesign and interior layout planning
+            </li>
+            <li>
+                <span class="check">&#10003;</span>
+                Structural adaptation and refurbishment
+            </li>
+            <li>
+                <span class="check">&#10003;</span>
+                Conversion into studios, one-bedroom, and multi-unit apartments
+            </li>
+            <li>
+                <span class="check">&#10003;</span>
+                Safety compliance, fire regulation upgrades, and quality control
+            </li>
+            <li>
+                <span class="check">&#10003;</span>
+                Long-term management and asset optimisation
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+
+
+
+	<!-- section-3 end -->
+
+
+	
+	<!-- section-4 start -->
+<!-- Residential Outcomes & End-to-End Development -->
+<section class="residential-section py-5">
+    <div class="container">
+
+        <div class="row g-4">
+            <!-- Card 1: Delivering High-Quality Residential Outcomes -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Delivering High-Quality Residential Outcomes</h5>
+                        <p class="card-text">
+                            Our team works closely with architects, contractors, and local authorities to ensure each conversion project meets the highest standards of safety, functionality, and modern living. We focus on creating sustainable, energy-efficient homes that provide long-term value for investors and communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: End-to-End Acquisition & Development -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">End-to-End Acquisition & Development</h5>
+                        <p class="card-text">
+                            From sourcing and purchasing commercial office blocks to developing and finalising ready-to-rent residential units, Landmark UK Properties Ltd manages every stage of the process. Whether the property is vacant, outdated, or in need of substantial redesign, we have the skills and experience to deliver successful conversions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* Card hover effect */
+.card-hover {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    background-color: #f8f9fb;
+}
+</style>
+
+
+
+
+		<!-- section-4 end -->
+
+
+	<!-- Our Blog -->
+	<!-- <section class="our-blog bgc-f7 pb30">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="main-title text-center">
+						<h2>Articles & Tips</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4 col-xl-4">
+					<div class="for_blog feat_property">
+						<div class="thumb">
+							<img class="img-whp" src="images/blog/bh1.jpg" alt="bh1.jpg">
+						</div>
+						<div class="details">
+							<div class="tc_content">
+								<p class="text-thm">Business</p>
+								<h4>Biggest Home in the Hollywood Hills Sells for an Equally</h4>
+							</div>
+							<div class="fp_footer">
+								<ul class="fp_meta float-left mb0">
+									<li class="list-inline-item"><a href="#"><img src="images/property/pposter1.png" alt="pposter1.png"></a></li>
+									<li class="list-inline-item"><a href="#">Ali Tufan</a></li>
+								</ul>
+								<a class="fp_pdate float-right" href="#">7 August 2019</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 col-xl-4">
+					<div class="for_blog feat_property">
+						<div class="thumb">
+							<img class="img-whp" src="images/blog/bh2.jpg" alt="bh2.jpg">
+						</div>
+						<div class="details">
+							<div class="tc_content">
+								<p class="text-thm">Business</p>
+								<h4>Bedroom Colors You’ll Never <br> Regret</h4>
+							</div>
+							<div class="fp_footer">
+								<ul class="fp_meta float-left mb0">
+									<li class="list-inline-item"><a href="#"><img src="images/property/pposter1.png" alt="pposter1.png"></a></li>
+									<li class="list-inline-item"><a href="#">Ali Tufan</a></li>
+								</ul>
+								<a class="fp_pdate float-right" href="#">7 August 2019</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 col-xl-4">
+					<div class="for_blog feat_property">
+						<div class="thumb">
+							<img class="img-whp" src="images/blog/bh3.jpg" alt="bh3.jpg">
+						</div>
+						<div class="details">
+							<div class="tc_content">
+								<p class="text-thm">Business</p>
+								<h4>The 5 Biggest Mistakes Veteran and Military</h4>
+							</div>
+							<div class="fp_footer">
+								<ul class="fp_meta float-left mb0">
+									<li class="list-inline-item"><a href="#"><img src="images/property/pposter1.png" alt="pposter1.png"></a></li>
+									<li class="list-inline-item"><a href="#">Ali Tufan</a></li>
+								</ul>
+								<a class="fp_pdate float-right" href="#">7 August 2019</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Our Team -->
+	<!-- <section class="our-team">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="main-title text-center">
+						<h2>Our Team</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="team_slider">
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/1.jpg" alt="1.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Jennifer Barton</h4>
+									<p>Broker</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/2.jpg" alt="2.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Kathleen Myers</h4>
+									<p>Agent</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/3.jpg" alt="3.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Mariusz Ciesla</h4>
+									<p>Broker</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/4.jpg" alt="4.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Helene Powers</h4>
+									<p>Broker</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/1.jpg" alt="1.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Jennifer Barton</h4>
+									<p>Broker</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/2.jpg" alt="2.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Kathleen Myers</h4>
+									<p>Agent</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/3.jpg" alt="3.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Mariusz Ciesla</h4>
+									<p>Broker</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="team_member home4">
+								<div class="thumb">
+									<img class="img-fluid" src="images/team/4.jpg" alt="4.jpg">
+									<div class="overylay">
+										<ul class="social_icon">
+											<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="details">
+									<h4>Helene Powers</h4>
+									<p>Broker</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Our Footer -->
+	<section class="footer_one">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
+					<div class="footer_about_widget">
+						<h4>About Site</h4>
+						<p>We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+					<div class="footer_qlink_widget">
+						<h4>Quick Links</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">User’s Guide</a></li>
+							<li><a href="#">Support Center</a></li>
+							<li><a href="#">Press Info</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+					<div class="footer_contact_widget">
+						<h4>Contact Us</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">info@findhouse.com</a></li>
+							<li><a href="#">Collins Street West, Victoria</a></li>
+							<li><a href="#">8007, Australia.</a></li>
+							<li><a href="#">+1 246-345-0699</a></li>
+							<li><a href="#">+1 246-345-0695</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+					<div class="footer_social_widget">
+						<h4>Follow us</h4>
+						<ul class="mb30">
+							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+						</ul>
+						<h4>Subscribe</h4>
+						<form class="footer_mailchimp_form">
+						 	<div class="form-row align-items-center">
+							    <div class="col-auto">
+							    	<input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Your email">
+							    </div>
+							    <div class="col-auto">
+							    	<button type="submit" class="btn btn-primary mb-2"><i class="fa fa-angle-right"></i></button>
+							    </div>
+						  	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Footer Bottom Area -->
+	<section class="footer_middle_area pt30 pb30">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-xl-6">
+					<div class="footer_menu_widget">
+						<ul>
+							<li class="list-inline-item"><a href="#">Home</a></li>
+							<li class="list-inline-item"><a href="#">Listing</a></li>
+							<li class="list-inline-item"><a href="#">Property</a></li>
+							<li class="list-inline-item"><a href="#">Pages</a></li>
+							<li class="list-inline-item"><a href="#">Blog</a></li>
+							<li class="list-inline-item"><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-6">
+					<div class="copyright-widget text-right">
+						<p>© 2020 Find House. Made with love.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<a class="scrollToHome" href="#"><i class="flaticon-arrows"></i></a>
+</div>
+<!-- Wrapper End -->
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+<script type="text/javascript" src="js/ace-responsive-menu.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/isotop.js"></script>
+<script type="text/javascript" src="js/snackbar.min.js"></script>
+<script type="text/javascript" src="js/simplebar.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/scrollto.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<!-- <script type="text/javascript" src="js/pricing-slider.js"></script> -->
+<script type="text/javascript" src="js/timepicker.js"></script>
+<!-- Custom script for all pages --> 
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+	$(document).ready(function () {
+    $('.team_slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        margin: 20,
+        dots: true,
+        nav: false,
+        smartSpeed: 600,
+        responsive: {
+            0: { items: 1 },
+            576: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 }
+        }
+    });
+});
+
+</script>
+</body>
+</html>
