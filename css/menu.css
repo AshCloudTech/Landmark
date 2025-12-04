@@ -145,3 +145,23 @@ header.stylehome1.home4 a {
 /* Small devices (min-width: 576px) (max-width: 767.98px) // (landscape phones, less than 768px) */
 @media only screen and (max-width: 767.98px){  
 }
+/* Fix mmenu being hidden behind the mobile header */
+#menu {
+    z-index: 999999 !important;
+}
+
+/* Fix the wrapper blocker overlay not appearing */
+.mm-wrapper__blocker {
+    z-index: 999998 !important;
+}
+
+/* Ensure the header does not overlap the menu */
+.header.stylehome1 {
+    z-index: 10 !important;
+}
+.mobile-menu-trigger img {
+    width: 28px;      /* perfect size */
+    height: auto;
+    display: block;
+    margin-top: 7px;
+}
