@@ -23,15 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'satisivm@gmail.com';     // Gmail address
-        $mail->Password   = 'xoaa hwwk lyof zfff'; // DO NOT PUT REAL PASSWORD HERE
+        $mail->Username   = '';
+        $mail->Password   = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // FROM & TO
-        $mail->setFrom('satisivm@gmail.com', 'Website Contact');
-        $mail->addAddress('satisivm@gmail.com'); // where the message arrives
-
+        $mail->setFrom('', 'Website Contact');
+        $mail->addAddress('');
         // EMAIL CONTENT
         $mail->isHTML(true);
         $mail->Subject = "New Contact Message: $subject";

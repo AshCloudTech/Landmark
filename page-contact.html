@@ -33,52 +33,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-		.custom-btn {
-    background-color:rgb(36, 50, 74);
-    color: #fff;
-    padding: 12px 28px;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.custom-btn:hover {
-    background-color: #354259; /* slightly darker hover */
-    color: #ffffff;
-    transform: translateY(-2px);
-}
+	
 	</style>
   </head>
-  <script>
-document.getElementById("contact_form").addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    const form = document.getElementById("contact_form");
-    const formData = new FormData(form);
-
-    // Debug to verify values
-    for (var pair of formData.entries()) {
-        console.log(pair[0]+ ': '+ pair[1]);
-    }
-
-    fetch("send_mail.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert(data);
-        form.reset();
-    })
-    .catch(error => {
-        alert("Error sending email!");
-        console.log(error);
-    });
-});
-</script>
 
 
 
@@ -591,5 +549,32 @@ function showPopup(){
     <script type="text/javascript" src="js/googlemaps1.js"></script>
     <!-- Custom script for all pages -->
     <script type="text/javascript" src="js/script.js"></script>
+      <script>
+document.getElementById("contact_form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = document.getElementById("contact_form");
+    const formData = new FormData(form);
+
+    // Debug to verify values
+    for (var pair of formData.entries()) {
+        console.log(pair[0]+ ': '+ pair[1]);
+    }
+
+    fetch("send_mail.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data);
+        form.reset();
+    })
+    .catch(error => {
+        alert("Error sending email!");
+        console.log(error);
+    });
+});
+</script>
   </body>
 </html>
