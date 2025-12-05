@@ -1,10 +1,12 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer-master/src/Exception.php';
-require 'PHPMailer-master/src/PHPMailer.php';
-require 'PHPMailer-master/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -17,18 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP SETTINGS
+        // SMTP SETTINGS (GMAIL)
         $mail->isSMTP();
-        $mail->Host       = 'smtp.office365.com';
+        $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'Syeda.umme.hani@cloudtechnologiesltd.co.uk'; 
-        $mail->Password   = 'Hani@069'; // replace with real password or app password
-        $mail->SMTPSecure = 'tls';
+        $mail->Username   = 'satisivm@gmail.com';     // Gmail address
+        $mail->Password   = 'xoaa hwwk lyof zfff'; // DO NOT PUT REAL PASSWORD HERE
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // FROM & TO
-        $mail->setFrom($email, $name); 
-        $mail->addAddress('Syeda.umme.hani@cloudtechnologiesltd.co.uk');
+        $mail->setFrom('satisivm@gmail.com', 'Website Contact');
+        $mail->addAddress('satisivm@gmail.com'); // where the message arrives
 
         // EMAIL CONTENT
         $mail->isHTML(true);
@@ -48,4 +50,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Email could not be sent. Error: {$mail->ErrorInfo}";
     }
 }
-?>

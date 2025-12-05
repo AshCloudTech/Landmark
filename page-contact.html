@@ -8,7 +8,7 @@
       name="keywords"
       content="advanced search custom, agency, agent, business, clean, corporate, directory, google maps, homes, listing, membership packages, property, real estate, real estate agent, realestate agency, realtor"
     />
-    <meta name="description" content="FindHouse - Real Estate HTML Template" />
+    <meta name="description" content="Landmark UK Properties" />
     <meta name="CreativeLayers" content="ATFN" />
     <!-- css file -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -16,7 +16,7 @@
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Title -->
-    <title>FindHouse - Real Estate HTML Template</title>
+    <title>Landmark UK Properties</title>
     <!-- Favicon -->
     <link
       href="images/favicon.ico"
@@ -127,22 +127,24 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
               data-menu-style="horizontal"
             >
               <li>
-                <a href="#"><span class="title">Home</span></a>
-                
+                <a href="index.html"><span class="title">Home</span></a>
+                <!-- Level Two-->
               </li>
-              
-              <li>
-                <a href="#"><span class="title">About Us</span></a>
-                
-              </li>
-              
-              <li>
-                <a href="page-service.html"><span class="title">Services</span></a>
-               
-              </li>
+
+            
+            
               <li class="last">
-                <a href="page-contact.html"
-                  ><span class="title">Contact</span></a
+                <a href="page-about.html"
+                  ><span class="title">About Us</span></a
+                >
+              </li>
+                <li>
+                <a href="page-contact.html"><span class="title">Contact us</span></a>
+              </li>
+
+              <li class="last">
+                <a href="page-service.html"
+                  ><span class="title">Services</span></a
                 >
               </li>
               
@@ -151,291 +153,6 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
         </div>
       </header>
       <!-- Modal -->
-      <div
-        class="sign_up_modal modal fade bd-example-modal-lg"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body container pb20">
-              <div class="row">
-                <div class="col-lg-12">
-                  <ul
-                    class="sign_up_tab nav nav-tabs"
-                    id="myTab"
-                    role="tablist"
-                  >
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="home-tab"
-                        data-toggle="tab"
-                        href="#home"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true"
-                        >Login</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="profile-tab"
-                        data-toggle="tab"
-                        href="#profile"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false"
-                        >Register</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="tab-content container" id="myTabContent">
-                <div
-                  class="row mt25 tab-pane fade show active"
-                  id="home"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
-                >
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="login_thumb">
-                      <img
-                        class="img-fluid w100"
-                        src="images/resource/login.jpg"
-                        alt="login.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="login_form">
-                      <form action="#">
-                        <div class="heading">
-                          <h4>Login</h4>
-                        </div>
-                        <div class="row mt25">
-                          <div class="col-lg-12">
-                            <button type="submit" class="btn btn-fb btn-block">
-                              <i class="fa fa-facebook float-left mt5"></i>
-                              Login with Facebook
-                            </button>
-                          </div>
-                          <div class="col-lg-12">
-                            <button
-                              type="submit"
-                              class="btn btn-googl btn-block"
-                            >
-                              <i class="fa fa-google float-left mt5"></i> Login
-                              with Google
-                            </button>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="input-group mb-2 mr-sm-2">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="inlineFormInputGroupUsername2"
-                            placeholder="User Name Or Email"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-user"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="input-group form-group">
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword1"
-                            placeholder="Password"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-password"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="exampleCheck1"
-                          />
-                          <label
-                            class="custom-control-label"
-                            for="exampleCheck1"
-                            >Remember me</label
-                          >
-                          <a class="btn-fpswd float-right" href="#"
-                            >Lost your password?</a
-                          >
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-log btn-block btn-thm"
-                        >
-                          Log In
-                        </button>
-                        <p class="text-center">
-                          Don't have an account?
-                          <a class="text-thm" href="#">Register</a>
-                        </p>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="row mt25 tab-pane fade"
-                  id="profile"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="regstr_thumb">
-                      <img
-                        class="img-fluid w100"
-                        src="images/resource/regstr.jpg"
-                        alt="regstr.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="sign_up_form">
-                      <div class="heading">
-                        <h4>Register</h4>
-                      </div>
-                      <form action="#">
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <button type="submit" class="btn btn-block btn-fb">
-                              <i class="fa fa-facebook float-left mt5"></i>
-                              Login with Facebook
-                            </button>
-                          </div>
-                          <div class="col-lg-12">
-                            <button
-                              type="submit"
-                              class="btn btn-block btn-googl"
-                            >
-                              <i class="fa fa-google float-left mt5"></i> Login
-                              with Google
-                            </button>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="form-group input-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="exampleInputName"
-                            placeholder="User Name"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-user"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group input-group">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail2"
-                            placeholder="Email"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="fa fa-envelope-o"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group input-group">
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword2"
-                            placeholder="Password"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-password"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group input-group">
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword3"
-                            placeholder="Re-enter password"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-password"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group ui_kit_select_search mb0">
-                          <select
-                            class="selectpicker"
-                            data-live-search="true"
-                            data-width="100%"
-                          >
-                            <option data-tokens="SelectRole">
-                              Single User
-                            </option>
-                            <option data-tokens="Agent/Agency">Agent</option>
-                            <option data-tokens="SingleUser">Multi User</option>
-                          </select>
-                        </div>
-                        <div class="form-group custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="exampleCheck2"
-                          />
-                          <label
-                            class="custom-control-label"
-                            for="exampleCheck2"
-                            >I have read and accept the Terms and Privacy
-                            Policy?</label
-                          >
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-log btn-block btn-thm"
-                        >
-                          Sign Up
-                        </button>
-                        <p class="text-center">
-                          Already have an account?
-                          <a class="text-thm" href="#">Log In</a>
-                        </p>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Main Header Nav For Mobile -->
       <div id="page" class="stylehome1 h0">
         <div class="mobile-menu">
@@ -450,9 +167,7 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
                   src="images/header-logo2.png"
                   alt="header-logo2.png"
               /></a>
-              <a class="mobile-menu-reg-link" href="page-register.html"
-                ><span class="flaticon-user"></span
-              ></a>
+             
             </div>
           </div>
         </div>
@@ -460,157 +175,18 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
         <nav id="menu" class="stylehome1">
           <ul>
             <li>
-              <span>Home</span>
-              <ul>
-                <li><a href="index.html">Home 1</a></li>
-                <li><a href="index2.html">Home 2</a></li>
-                <li><a href="index3.html">Home 3</a></li>
-                <li><a href="index.html">Home 4</a></li>
-                <li><a href="index5.html">Home 5</a></li>
-                <li><a href="index6.html">Home 6</a></li>
-                <li><a href="index7.html">Home 7</a></li>
-                <li><a href="index8.html">Home 8</a></li>
-                <li><a href="index9.html">Home 9</a></li>
-                <li><a href="index10.html">Home 10</a></li>
-              </ul>
+              <span><a href="index.html">Home</a></span>
             </li>
-            <li>
-              <span>Listing</span>
-              <ul>
-                <li>
-                  <span>Listing Grid</span>
-                  <ul>
-                    <li><a href="page-listing-grid-v1.html">Grid v1</a></li>
-                    <li><a href="page-listing-grid-v2.html">Grid v2</a></li>
-                    <li><a href="page-listing-grid-v3.html">Grid v3</a></li>
-                    <li><a href="page-listing-grid-v4.html">Grid v4</a></li>
-                    <li><a href="page-listing-grid-v5.html">Grid v5</a></li>
-                    <li>
-                      <a href="page-listing-full-width-grid.html"
-                        >Grid Fullwidth</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Listing Style</span>
-                  <ul>
-                    <li>
-                      <a href="page-listing-parallax.html">Parallax Style</a>
-                    </li>
-                    <li><a href="page-listing-slider.html">Slider Style</a></li>
-                    <li><a href="page-listing-map.html">Map Header</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Listing Half</span>
-                  <ul>
-                    <li><a href="page-listing-half-map-v1.html">Map V1</a></li>
-                    <li><a href="page-listing-half-map-v2.html">Map V2</a></li>
-                    <li><a href="page-listing-half-map-v3.html">Map V3</a></li>
-                    <li><a href="page-listing-half-map-v4.html">Map V4</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Agent View</span>
-                  <ul>
-                    <li><a href="page-listing-agent-v1.html">Agent V1</a></li>
-                    <li><a href="page-listing-agent-v2.html">Agent V2</a></li>
-                    <li>
-                      <a href="page-listing-agent-v3.html">Agent Details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Agencies View</span>
-                  <ul>
-                    <li>
-                      <a href="page-agencies-list-v1.html">Agencies V1</a>
-                    </li>
-                    <li>
-                      <a href="page-agencies-list-v2.html">Agencies V2</a>
-                    </li>
-                    <li>
-                      <a href="page-agencies-list-v3.html">Agencies Details</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Property</span>
-              <ul>
-                <li>
-                  <span>Property</span>
-                  <ul>
-                    <li><a href="page-dashboard.html">Dashboard</a></li>
-                    <li><a href="page-my-properties.html">My Properties</a></li>
-                    <li>
-                      <a href="page-add-new-property.html">Add New Property</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Listing Single</span>
-                  <ul>
-                    <li><a href="page-listing-single-v1.html">Single V1</a></li>
-                    <li><a href="page-listing-single-v2.html">Single V2</a></li>
-                    <li><a href="page-listing-single-v3.html">Single V3</a></li>
-                    <li><a href="page-listing-single-v4.html">Single V4</a></li>
-                    <li><a href="page-listing-single-v5.html">Single V5</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Blog</span>
-              <ul>
-                <li><a href="page-blog-v1.html">Blog List 1</a></li>
-                <li><a href="page-blog-grid.html">Blog List 2</a></li>
-                <li><a href="page-blog-single.html">Single Post</a></li>
-              </ul>
-            </li>
-            <li>
-              <span>Pages</span>
-              <ul>
-                <li>
-                  <span>Shop</span>
-                  <ul>
-                    <li><a href="page-shop.html">Shop</a></li>
-                    <li><a href="page-shop-single.html">Shop Single</a></li>
-                    <li><a href="page-shop-cart.html">Cart</a></li>
-                    <li><a href="page-shop-checkout.html">Checkout</a></li>
-                    <li><a href="page-shop-order.html">Order</a></li>
-                  </ul>
-                </li>
-                <li><a href="page-about.html">About Us</a></li>
-                <li><a href="page-gallery.html">Gallery</a></li>
-                <li><a href="page-faq.html">Faq</a></li>
-                <li><a href="page-login.html">LogIn</a></li>
-                <li><a href="page-compare.html">Membership</a></li>
-                <li><a href="page-compare2.html">Membership 2</a></li>
-                <li><a href="page-register.html">Register</a></li>
-                <li><a href="page-service.html">Service</a></li>
-                <li><a href="page-error.html">404 Page</a></li>
-                <li><a href="page-terms.html">Terms and Conditions</a></li>
-                <li><a href="page-ui-element.html">UI Elements</a></li>
-              </ul>
-            </li>
+          
+           
+            
+         
             <li><a href="page-contact.html">Contact</a></li>
-            <li>
-              <a href="page-login.html"
-                ><span class="flaticon-user"></span> Login</a
-              >
+               <li>
+              <span> <a href="page-about.html">About Us</a></span>
             </li>
-            <li>
-              <a href="page-register.html"
-                ><span class="flaticon-edit"></span> Register</a
-              >
-            </li>
-            <li class="cl_btn">
-              <a class="btn btn-block btn-lg btn-thm circle" href="#"
-                ><span class="flaticon-plus"></span> Create Listing</a
-              >
+              <li>
+              <span> <a href="page-service.html">Services</a></span>
             </li>
           </ul>
         </nav>
@@ -618,18 +194,50 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
 
       <!-- Inner Page Breadcrumb -->
       <section class="inner_page_breadcrumb">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6">
-					<div class="breadcrumb_content">
-						
-						<h6 class="breadcrumb_title">Get in touch with Landmark UK Properties Ltd</h6>
-						<p>Our goal is to identify high-potential assets, maximise value, and create sustainable long-term returns for our partners and stakeholders.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="breadcrumb_content">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Contact Us
+                  </li>
+                </ol>
+                <h1 class="breadcrumb_title">Contact Us</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+  <div id="successPopup" class="popup">
+  <p>Thanks for reaching out!</p>
+  <div class="progress"></div>
+</div>
+
+
+<!-- Landmark Contact Intro Section -->
+<section class="landmark_contact_intro">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-sm-12 text-center">
+        <h2 class="landmark_contact_title">
+          Get in touch with Landmark UK Properties Ltd
+        </h2>
+        <p class="landmark_contact_desc">
+          Our goal is to identify high-potential assets, maximise value, and create 
+          sustainable long-term returns for our partners and stakeholders.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       <!-- Our Contact -->
       <section class="our-contact pb0 bgc-f7">
@@ -639,14 +247,8 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
               <div class="form_grid">
                 <h4 class="mb5">Send Us An Email</h4>
                 
-                <form
-                  class="contact_form"
-                  id="contact_form"
-                  name="contact_form"
-                  action="#"
-                  method="post"
-                  novalidate="novalidate"
-                >
+               <form class="contact_form" id="contact_form" name="contact_form" novalidate="novalidate">
+
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -708,9 +310,11 @@ document.getElementById("contact_form").addEventListener("submit", function(e) {
                         ></textarea>
                       </div>
                       <div class="form-group mb0">
-                        <button type="submit" class="btn btn-lg btn-thm" id="sendBtn">
-                          Send Message
-                        </button>
+                      <button type="submit" class="btn btn-lg btn-thm" id="sendBtn">
+    <span id="btnText">Send Message</span>
+    <span id="btnLoader" class="loader" style="display:none;"></span>
+</button>
+
                       </div>
                     </div>
                   </div>
@@ -773,7 +377,7 @@ Building value through strategic acquisitions and intelligent development.
       </section>
 
       <!-- Start Partners -->
-      <section class="start-partners bgc-thm pt50 pb50">
+      <!-- <section class="start-partners bgc-thm pt50 pb50">
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
@@ -789,7 +393,7 @@ Building value through strategic acquisitions and intelligent development.
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Our Footer -->
       <section class="footer_one">
@@ -929,6 +533,61 @@ Building value through strategic acquisitions and intelligent development.
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&callback=initMap"
       type="text/javascript"
     ></script>
+   <script>
+document.getElementById("contact_form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let formData = new FormData(this);
+    let btn = document.getElementById("sendBtn");
+    let btnText = document.getElementById("btnText");
+    let btnLoader = document.getElementById("btnLoader");
+
+   
+    btn.disabled = true;
+    btnText.style.display = "none";
+    btnLoader.style.display = "inline-block";
+
+    fetch("send_mail.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.text())
+    .then(response => {
+
+       
+        btn.disabled = false;
+        btnText.style.display = "inline";
+        btnLoader.style.display = "none";
+
+        showPopup();  
+        document.getElementById("contact_form").reset();
+    })
+    .catch(err => {
+        alert("Error sending message!");
+
+        btn.disabled = false;
+        btnText.style.display = "inline";
+        btnLoader.style.display = "none";
+    });
+});
+
+function showPopup(){
+    let popup = document.getElementById("successPopup");
+    let bar = popup.querySelector(".progress");
+
+    popup.classList.add("show");
+
+    bar.style.width = "100%";
+    setTimeout(() => {
+        bar.style.width = "0%";
+    }, 50);
+
+    setTimeout(() => {
+        popup.classList.remove("show");
+    }, 5000);
+}
+</script>
+
     <script type="text/javascript" src="js/googlemaps1.js"></script>
     <!-- Custom script for all pages -->
     <script type="text/javascript" src="js/script.js"></script>

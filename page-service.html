@@ -8,7 +8,7 @@
       name="keywords"
       content="advanced search custom, agency, agent, business, clean, corporate, directory, google maps, homes, listing, membership packages, property, real estate, real estate agent, realestate agency, realtor"
     />
-    <meta name="description" content="FindHouse - Real Estate HTML Template" />
+    <meta name="description" content="Landmark UK Properties" />
     <meta name="CreativeLayers" content="ATFN" />
     <!-- css file -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -16,7 +16,7 @@
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Title -->
-    <title>FindHouse - Real Estate HTML Template</title>
+    <title>Landmark UK Properties</title>
     <!-- Favicon -->
     <link
       href="images/favicon.ico"
@@ -33,68 +33,108 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-		.steps-wrapper {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-			gap: 22px;
-			max-width: 1100px;
-			margin: auto;
-		}
+.steps-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-		.step-card {
-			position: relative;
-			padding: 40px 25px 25px 120px;
-			overflow: hidden;
-			border-radius: 14px;
-			background: rgb(62, 76, 102);
-			border: 1px solid #ffff;
-			backdrop-filter: blur(6px);
-			transition: 0.3s ease;
-			min-height: 150px;
-		}
+.step-card {
+  position: relative;
+  padding: 40px 25px 25px 40px; /* space for left number */
+  overflow: hidden;
+  border-radius: 14px;
+  background: rgb(62, 76, 102);
+  border: 1px solid #fff;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  min-height: 150px;
+}
 
-		.step-card:hover {
-			transform: translateY(-6px);
-			border-color: rgb(62, 76, 102);
+.step-card:hover {
+  transform: translateY(-6px);
+  border-color: rgb(62, 76, 102);
+  color: #ff5a5f !important;
+}
 
-			color: #ff5a5f !important;
-		}
+/* BIG LEFT NUMBER */
+.step-card::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 80px; /* reduced for better desktop display */
+  font-weight: 900;
+  color: #fff;
+  z-index: 1;
+  pointer-events: none;
+  line-height: 1;
+}
 
-		/* BIG LEFT NUMBER */
-		.step-card::before {
-			content: attr(data-step);
-			position: absolute;
-			top: -10px;
-			left: 20px;
-			font-size: 130px;
-			font-weight: 900;
-			color: #ffff;
-			z-index: 1;
-			pointer-events: none;
-			line-height: 1;
-		}
+/* Content on top of number */
+.step-title,
+.step-desc {
+  position: relative;
+  z-index: 2;
+}
 
-		/* Content stays on top of number */
-		.step-title,
-		.step-desc {
-			position: relative;
-			z-index: 2;
-		}
+.step-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #fff;
+}
 
-		.step-title {
-			font-size: 18px;
-			font-weight: bold;
-			margin-bottom: 6px;
-			color: #ffff;
+.step-desc {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.45;
+  max-width: 85%;
+}
 
-		}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .step-card::before {
+    font-size: 70px;
+  }
+}
 
-		.step-desc {
-			font-size: 14px;
-			color: #ffff;
-			line-height: 1.45;
-			max-width: 85%;
-		}
+@media (max-width: 992px) {
+  .step-card {
+    padding-left: 80px;
+  }
+  .step-card::before {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .step-card {
+    padding-left: 70px;
+  }
+  .step-card::before {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .step-card {
+    padding-left: 60px;
+  }
+  .step-card::before {
+    font-size: 40px;
+    top: 0px;
+  }
+  .step-title {
+    font-size: 16px;
+  }
+  .step-desc {
+    font-size: 13px;
+  }
+}
+
 	</style>
 
 	<style>
@@ -491,317 +531,32 @@
               data-menu-style="horizontal"
             >
               <li>
-                <a href="#"><span class="title">Home</span></a>
-               
-                
+                <a href="index.html"><span class="title">Home</span></a>
+                <!-- Level Two-->
               </li>
-              
-              <li>
-                <a href="#"><span class="title">About Us</span></a>
-                
-              </li>
-              <li>
-                <a href="page-service.html"><span class="title">Service</span></a>
-                
-              </li>
-              
+
+            
+            
               <li class="last">
-                <a href="page-contact.html"
-                  ><span class="title">Contact</span></a
+                <a href="page-about.html"
+                  ><span class="title">About Us</span></a
                 >
               </li>
-              
+                <li>
+                <a href="page-contact.html"><span class="title">Contact us</span></a>
+              </li>
+
+              <li class="last">
+                <a href="page-service.html"
+                  ><span class="title">Services</span></a
+                >
+              </li>
               
             </ul>
           </nav>
         </div>
       </header>
       <!-- Modal -->
-      <div
-        class="sign_up_modal modal fade bd-example-modal-lg"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body container pb20">
-              <div class="row">
-                <div class="col-lg-12">
-                  <ul
-                    class="sign_up_tab nav nav-tabs"
-                    id="myTab"
-                    role="tablist"
-                  >
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="home-tab"
-                        data-toggle="tab"
-                        href="#home"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true"
-                        >Login</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="profile-tab"
-                        data-toggle="tab"
-                        href="#profile"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false"
-                        >Register</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="tab-content container" id="myTabContent">
-                <div
-                  class="row mt25 tab-pane fade show active"
-                  id="home"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
-                >
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="login_thumb">
-                      <img
-                        class="img-fluid w100"
-                        src="images/resource/login.jpg"
-                        alt="login.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="login_form">
-                      <form action="#">
-                        <div class="heading">
-                          <h4>Login</h4>
-                        </div>
-                        <div class="row mt25">
-                          <div class="col-lg-12">
-                            <button type="submit" class="btn btn-fb btn-block">
-                              <i class="fa fa-facebook float-left mt5"></i>
-                              Login with Facebook
-                            </button>
-                          </div>
-                          <div class="col-lg-12">
-                            <button
-                              type="submit"
-                              class="btn btn-googl btn-block"
-                            >
-                              <i class="fa fa-google float-left mt5"></i> Login
-                              with Google
-                            </button>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="input-group mb-2 mr-sm-2">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="inlineFormInputGroupUsername2"
-                            placeholder="User Name Or Email"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-user"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="input-group form-group">
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword1"
-                            placeholder="Password"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-password"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="exampleCheck1"
-                          />
-                          <label
-                            class="custom-control-label"
-                            for="exampleCheck1"
-                            >Remember me</label
-                          >
-                          <a class="btn-fpswd float-right" href="#"
-                            >Lost your password?</a
-                          >
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-log btn-block btn-thm"
-                        >
-                          Log In
-                        </button>
-                        <p class="text-center">
-                          Don't have an account?
-                          <a class="text-thm" href="#">Register</a>
-                        </p>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="row mt25 tab-pane fade"
-                  id="profile"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="regstr_thumb">
-                      <img
-                        class="img-fluid w100"
-                        src="images/resource/regstr.jpg"
-                        alt="regstr.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="sign_up_form">
-                      <div class="heading">
-                        <h4>Register</h4>
-                      </div>
-                      <form action="#">
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <button type="submit" class="btn btn-block btn-fb">
-                              <i class="fa fa-facebook float-left mt5"></i>
-                              Login with Facebook
-                            </button>
-                          </div>
-                          <div class="col-lg-12">
-                            <button
-                              type="submit"
-                              class="btn btn-block btn-googl"
-                            >
-                              <i class="fa fa-google float-left mt5"></i> Login
-                              with Google
-                            </button>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="form-group input-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="exampleInputName"
-                            placeholder="User Name"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-user"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group input-group">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail2"
-                            placeholder="Email"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="fa fa-envelope-o"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group input-group">
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword2"
-                            placeholder="Password"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-password"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group input-group">
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword3"
-                            placeholder="Re-enter password"
-                          />
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">
-                              <i class="flaticon-password"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group ui_kit_select_search mb0">
-                          <select
-                            class="selectpicker"
-                            data-live-search="true"
-                            data-width="100%"
-                          >
-                            <option data-tokens="SelectRole">
-                              Single User
-                            </option>
-                            <option data-tokens="Agent/Agency">Agent</option>
-                            <option data-tokens="SingleUser">Multi User</option>
-                          </select>
-                        </div>
-                        <div class="form-group custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="exampleCheck2"
-                          />
-                          <label
-                            class="custom-control-label"
-                            for="exampleCheck2"
-                            >I have read and accept the Terms and Privacy
-                            Policy?</label
-                          >
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-log btn-block btn-thm"
-                        >
-                          Sign Up
-                        </button>
-                        <p class="text-center">
-                          Already have an account?
-                          <a class="text-thm" href="#">Log In</a>
-                        </p>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Main Header Nav For Mobile -->
       <div id="page" class="stylehome1 h0">
         <div class="mobile-menu">
@@ -816,9 +571,7 @@
                   src="images/header-logo2.png"
                   alt="header-logo2.png"
               /></a>
-              <a class="mobile-menu-reg-link" href="page-register.html"
-                ><span class="flaticon-user"></span
-              ></a>
+             
             </div>
           </div>
         </div>
@@ -826,161 +579,23 @@
         <nav id="menu" class="stylehome1">
           <ul>
             <li>
-              <span>Home</span>
-              <ul>
-                <li><a href="index.html">Home 1</a></li>
-                <li><a href="index2.html">Home 2</a></li>
-                <li><a href="index3.html">Home 3</a></li>
-                <li><a href="index.html">Home 4</a></li>
-                <li><a href="index5.html">Home 5</a></li>
-                <li><a href="index6.html">Home 6</a></li>
-                <li><a href="index7.html">Home 7</a></li>
-                <li><a href="index8.html">Home 8</a></li>
-                <li><a href="index9.html">Home 9</a></li>
-                <li><a href="index10.html">Home 10</a></li>
-              </ul>
+              <span><a href="index.html">Home</a></span>
             </li>
-            <li>
-              <span>Listing</span>
-              <ul>
-                <li>
-                  <span>Listing Grid</span>
-                  <ul>
-                    <li><a href="page-listing-grid-v1.html">Grid v1</a></li>
-                    <li><a href="page-listing-grid-v2.html">Grid v2</a></li>
-                    <li><a href="page-listing-grid-v3.html">Grid v3</a></li>
-                    <li><a href="page-listing-grid-v4.html">Grid v4</a></li>
-                    <li><a href="page-listing-grid-v5.html">Grid v5</a></li>
-                    <li>
-                      <a href="page-listing-full-width-grid.html"
-                        >Grid Fullwidth</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Listing Style</span>
-                  <ul>
-                    <li>
-                      <a href="page-listing-parallax.html">Parallax Style</a>
-                    </li>
-                    <li><a href="page-listing-slider.html">Slider Style</a></li>
-                    <li><a href="page-listing-map.html">Map Header</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Listing Half</span>
-                  <ul>
-                    <li><a href="page-listing-half-map-v1.html">Map V1</a></li>
-                    <li><a href="page-listing-half-map-v2.html">Map V2</a></li>
-                    <li><a href="page-listing-half-map-v3.html">Map V3</a></li>
-                    <li><a href="page-listing-half-map-v4.html">Map V4</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Agent View</span>
-                  <ul>
-                    <li><a href="page-listing-agent-v1.html">Agent V1</a></li>
-                    <li><a href="page-listing-agent-v2.html">Agent V2</a></li>
-                    <li>
-                      <a href="page-listing-agent-v3.html">Agent Details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Agencies View</span>
-                  <ul>
-                    <li>
-                      <a href="page-agencies-list-v1.html">Agencies V1</a>
-                    </li>
-                    <li>
-                      <a href="page-agencies-list-v2.html">Agencies V2</a>
-                    </li>
-                    <li>
-                      <a href="page-agencies-list-v3.html">Agencies Details</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Property</span>
-              <ul>
-                <li>
-                  <span>Property</span>
-                  <ul>
-                    <li><a href="page-dashboard.html">Dashboard</a></li>
-                    <li><a href="page-my-properties.html">My Properties</a></li>
-                    <li>
-                      <a href="page-add-new-property.html">Add New Property</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Listing Single</span>
-                  <ul>
-                    <li><a href="page-listing-single-v1.html">Single V1</a></li>
-                    <li><a href="page-listing-single-v2.html">Single V2</a></li>
-                    <li><a href="page-listing-single-v3.html">Single V3</a></li>
-                    <li><a href="page-listing-single-v4.html">Single V4</a></li>
-                    <li><a href="page-listing-single-v5.html">Single V5</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Blog</span>
-              <ul>
-                <li><a href="page-blog-v1.html">Blog List 1</a></li>
-                <li><a href="page-blog-grid.html">Blog List 2</a></li>
-                <li><a href="page-blog-single.html">Single Post</a></li>
-              </ul>
-            </li>
-            <li>
-              <span>Pages</span>
-              <ul>
-                <li>
-                  <span>Shop</span>
-                  <ul>
-                    <li><a href="page-shop.html">Shop</a></li>
-                    <li><a href="page-shop-single.html">Shop Single</a></li>
-                    <li><a href="page-shop-cart.html">Cart</a></li>
-                    <li><a href="page-shop-checkout.html">Checkout</a></li>
-                    <li><a href="page-shop-order.html">Order</a></li>
-                  </ul>
-                </li>
-                <li><a href="page-about.html">About Us</a></li>
-                <li><a href="page-gallery.html">Gallery</a></li>
-                <li><a href="page-faq.html">Faq</a></li>
-                <li><a href="page-login.html">LogIn</a></li>
-                <li><a href="page-compare.html">Membership</a></li>
-                <li><a href="page-compare2.html">Membership 2</a></li>
-                <li><a href="page-register.html">Register</a></li>
-                <li><a href="page-service.html">Service</a></li>
-                <li><a href="page-error.html">404 Page</a></li>
-                <li><a href="page-terms.html">Terms and Conditions</a></li>
-                <li><a href="page-ui-element.html">UI Elements</a></li>
-              </ul>
-            </li>
+          
+           
+            
+         
             <li><a href="page-contact.html">Contact</a></li>
-            <li>
-              <a href="page-login.html"
-                ><span class="flaticon-user"></span> Login</a
-              >
+               <li>
+              <span> <a href="page-about.html">About Us</a></span>
             </li>
-            <li>
-              <a href="page-register.html"
-                ><span class="flaticon-edit"></span> Register</a
-              >
-            </li>
-            <li class="cl_btn">
-              <a class="btn btn-block btn-lg btn-thm circle" href="#"
-                ><span class="flaticon-plus"></span> Create Listing</a
-              >
+              <li>
+              <span> <a href="page-service.html">Services</a></span>
             </li>
           </ul>
         </nav>
       </div>
+
 
       <!-- hero section -->
      <section class="p0">
@@ -1240,55 +855,84 @@
 		</section>
 
 		<!-- Process / Lifecycle Section -->
-		<h2 style="text-align:center; margin-bottom:20px;">
-			End-to-End Acquisition & Development Process
-		</h2>
+		<!-- Process / Lifecycle Section -->
+<section class="process_lifecycle_section">
+  <div class="container">
+    <h2 class="process_title text-center">
+      End-to-End Acquisition & Development Process
+    </h2>
 
-		<div class="steps-wrapper">
+    <div class="steps-wrapper">
 
-			<div class="step-card" data-step="1">
-				<div class="step-title">Acquisition & negotiation</div>
-				<div class="step-desc">
-					Targeting assets, approaching owners, negotiating and securing agreements.
-				</div>
-			</div>
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3 class="step-title">Acquisition & Negotiation</h3>
+          <p class="step-desc">
+            Targeting assets, approaching owners, negotiating and securing agreements.
+          </p>
+        </div>
+      </div>
 
-			<div class="step-card" data-step="2">
-				<div class="step-title">Due diligence & feasibility</div>
-				<div class="step-desc">
-					Technical, legal and financial checks with feasibility modelling.
-				</div>
-			</div>
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3 class="step-title">Due Diligence & Feasibility</h3>
+          <p class="step-desc">
+            Technical, legal and financial checks with feasibility modelling.
+          </p>
+        </div>
+      </div>
 
-			<div class="step-card" data-step="3">
-				<div class="step-title">Planning & building regulations</div>
-				<div class="step-desc">
-					Planning strategies, approvals and building regulation checks.
-				</div>
-			</div>
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3 class="step-title">Planning & Building Regulations</h3>
+          <p class="step-desc">
+            Planning strategies, approvals and building regulation checks.
+          </p>
+        </div>
+      </div>
 
-			<div class="step-card" data-step="4">
-				<div class="step-title">Conversion / Development</div>
-				<div class="step-desc">
-					Designing, procurement, contractor selection and site preparation.
-				</div>
-			</div>
+      <!-- Step 4 -->
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3 class="step-title">Conversion / Development</h3>
+          <p class="step-desc">
+            Designing, procurement, contractor selection and site preparation.
+          </p>
+        </div>
+      </div>
 
-			<div class="step-card" data-step="5">
-				<div class="step-title">Construction & refurbishment</div>
-				<div class="step-desc">
-					On-site construction, management and quality control.
-				</div>
-			</div>
+      <!-- Step 5 -->
+      <div class="step-card">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3 class="step-title">Construction & Refurbishment</h3>
+          <p class="step-desc">
+            On-site construction, management and quality control.
+          </p>
+        </div>
+      </div>
 
-			<div class="step-card" data-step="6">
-				<div class="step-title">Final letting / sale / retention</div>
-				<div class="step-desc">
-					Marketing, leasing, sale or planning long-term retention strategy.
-				</div>
-			</div>
+      <!-- Step 6 -->
+      <div class="step-card">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <h3 class="step-title">Final Letting / Sale / Retention</h3>
+          <p class="step-desc">
+            Marketing, leasing, sale or planning long-term retention strategy.
+          </p>
+        </div>
+      </div>
 
-		</div>
+    </div>
+  </div>
+</section>
 
 		<!-- Flexible Acquisition Criteria -->
 		<div class="criteria-container mt-5">
